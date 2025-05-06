@@ -1,0 +1,23 @@
+import java.security.PublicKey;
+
+public class Main {
+    public static void main(String[] args) {
+        int number = 50;
+        int snumber = 55;
+
+        if(number>snumber){
+            System.out.println("Number is great");
+        } else if (number==snumber) {
+            System.out.println("Number is equal to snumber");
+
+        }
+        else {
+            System.out.println("Snumber is the greatest");
+        }
+
+
+    }
+}
+
+
+
