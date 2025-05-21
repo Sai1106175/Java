@@ -1,0 +1,15 @@
+public class Main {
+    public static int multiplication(int i){
+        if(i>0){
+            return i * multiplication(i-1);
+
+        }
+        else{
+            return 1;
+        }
+    }
+    public static void main(String [] arg){
+        int r = multiplication(5);
+        System.out.println(r);
+    }
+}
