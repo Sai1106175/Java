@@ -1,0 +1,18 @@
+public class Main {
+    public static int addition(int i){
+        if(i>0){
+            System.out.println(i);
+            return  addition(i-1);
+
+
+        }
+        else {
+            return 0;
+        }
+    }
+
+    public static void main(String [] arg){
+        int r = addition(5);
+        System.out.println(r);
+    }
+}
