@@ -1,0 +1,47 @@
+package PP;
+
+public class Details extends washingMachine {
+
+    public static void main(String[] arg){
+        washingMachine ws = new washingMachine();
+        ws.setbrand("Onida");
+        ws.getBrand();
+        ws.Setcapacity(300);
+        ws.GetCapacity();
+    }
+
+
+}
+package PP;
+
+public class washingMachine extends Appliances {
+    private int capacity;
+
+    public int Setcapacity(int capcity){
+        this.capacity = capcity;
+        return capcity;
+    }
+
+    public void GetCapacity(){
+        System.out.println("The capacity of this brand is " + capacity);
+    }
+
+
+
+
+}
+package PP;
+
+public class Appliances {
+    private String brand;
+
+    public String setbrand(String brand) {
+        this.brand = brand;
+        return brand;
+    }
+
+    public void getBrand(){
+        System.out.println("This is the brand " + brand);
+    }
+
+}
